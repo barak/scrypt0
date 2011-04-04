@@ -34,7 +34,7 @@ bin_PROGRAMS = scrypt$(EXEEXT)
 subdir = .
 DIST_COMMON = $(am__configure_deps) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in $(srcdir)/config.h.in \
-	$(top_srcdir)/configure config.aux/depcomp \
+	$(top_srcdir)/configure TODO config.aux/depcomp \
 	config.aux/install-sh config.aux/missing
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/acscrypt.m4 \

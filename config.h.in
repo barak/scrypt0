@@ -3,6 +3,10 @@
 /* Define to 1 if you have the `clock_gettime' function. */
 #undef HAVE_CLOCK_GETTIME
 
+/* Define to 1 if you have the declaration of `be64enc', and to 0 if you
+   don't. */
+#undef HAVE_DECL_BE64ENC
+
 /* Define to 1 if you have the <err.h> header file. */
 #undef HAVE_ERR_H
 
@@ -32,6 +36,12 @@
 
 /* Define to 1 if the system has the type `struct sysinfo'. */
 #undef HAVE_STRUCT_SYSINFO
+
+/* Define to 1 if `mem_unit' is member of `struct sysinfo'. */
+#undef HAVE_STRUCT_SYSINFO_MEM_UNIT
+
+/* Define to 1 if `totalram' is member of `struct sysinfo'. */
+#undef HAVE_STRUCT_SYSINFO_TOTALRAM
 
 /* Define to 1 if the OS has a hw.usermem sysctl */
 #undef HAVE_SYSCTL_HW_USERMEM
