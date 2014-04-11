@@ -1,5 +1,4 @@
-m4_define([SCRYPT_VERS],m4_include([scrypt-version]))
-AC_INIT([scrypt],SCRYPT_VERS())
+AC_INIT([scrypt],[1.1.6])
 AC_CONFIG_AUX_DIR([config.aux])
 AM_INIT_AUTOMAKE()
 AM_MAINTAINER_MODE
