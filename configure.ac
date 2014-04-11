@@ -5,7 +5,7 @@ AM_MAINTAINER_MODE
 AC_PROG_CC
 
 # Check for clock_gettime.  On some systems, this is provided via librt.
-AC_CHECK_LIB(rt, clock_gettime)
+AC_SEARCH_LIBS([clock_gettime], [rt])
 AC_CHECK_FUNCS([clock_gettime])
 
 # Check for a linuxy sysinfo syscall; and while we're doing that, check if
