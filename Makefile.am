@@ -1,5 +1,3 @@
-AUTOMAKE_OPTIONS=	foreign
-
 bin_PROGRAMS=	scrypt
 dist_man_MANS=$(scrypt_man_MANS)
 
