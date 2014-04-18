@@ -1,7 +1,8 @@
 AC_INIT([scrypt],[1.1.6])
+AC_CONFIG_SRCDIR([lib/scryptenc/scryptenc.c])
 AC_CONFIG_AUX_DIR([config.aux])
+AC_CONFIG_MACRO_DIR([m4])
 AM_INIT_AUTOMAKE([foreign subdir-objects -Wall])
-AM_MAINTAINER_MODE
 AC_PROG_CC
 
 # Check for clock_gettime.  On some systems, this is provided via librt.
