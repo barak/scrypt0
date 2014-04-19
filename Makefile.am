@@ -8,8 +8,14 @@ scrypt_SOURCES=		main.c				\
 			lib/scryptenc/scryptenc.c	\
 			lib/scryptenc/scryptenc_cpuperf.c	\
 			libcperciva/crypto/crypto_aesctr.c	\
-			libcperciva/alg/sha256.c		\
-			lib/crypto/crypto_scrypt-@SCRYPTVER@.c
+			libcperciva/alg/sha256.c
+
+if SSE2
+scrypt_SOURCES += lib/crypto/crypto_scrypt-sse.c
+else
+scrypt_SOURCES += lib/crypto/crypto_scrypt-nosse.c
+endif
+
 scrypt_CPPFLAGS=	-I $(srcdir)/lib/util -I $(srcdir)/lib/scryptenc \
 			-I $(srcdir)/lib/crypto -I $(srcdir)/libcperciva/alg \
 			-I $(srcdir)/libcperciva/crypto	-I $(srcdir)/libcperciva/util

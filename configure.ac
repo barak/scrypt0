@@ -37,8 +37,7 @@ AC_ARG_ENABLE([sse2],
 	[use optimized SSE2 code])],
     [],
     [enable_sse2=no])
-AS_IF([test "x$enable_sse2" != xno], [SCRYPTVER=sse], [SCRYPTVER=nosse])
-AC_SUBST([SCRYPTVER])
+AM_CONDITIONAL([SSE2], [test "x$enable_sse2" = xyes])
 
 AC_SYS_LARGEFILE
 
