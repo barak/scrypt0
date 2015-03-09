@@ -10,7 +10,7 @@ scrypt_SOURCES=		main.c				\
 			libcperciva/crypto/crypto_aesctr.c	\
 			libcperciva/alg/sha256.c		\
 			lib/crypto/crypto_scrypt-@SCRYPTVER@.c
-scrypt_CFLAGS=		-I $(srcdir)/lib/util -I $(srcdir)/lib/scryptenc \
+scrypt_CPPFLAGS=	-I $(srcdir)/lib/util -I $(srcdir)/lib/scryptenc \
 			-I $(srcdir)/lib/crypto -I $(srcdir)/libcperciva/alg \
 			-I $(srcdir)/libcperciva/crypto	-I $(srcdir)/libcperciva/util
 scrypt_man_MANS=	scrypt.1
