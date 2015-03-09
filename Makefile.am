@@ -13,5 +13,4 @@ scrypt_SOURCES=		main.c				\
 scrypt_CFLAGS=		-I $(srcdir)/lib/util -I $(srcdir)/lib/scryptenc \
 			-I $(srcdir)/lib/crypto -I $(srcdir)/libcperciva/alg \
 			-I $(srcdir)/libcperciva/crypto	-I $(srcdir)/libcperciva/util
-scrypt_LDADD=		-lcrypto
 scrypt_man_MANS=	scrypt.1
