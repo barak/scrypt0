@@ -20,3 +20,6 @@ scrypt_CPPFLAGS=	-I $(srcdir)/lib/util -I $(srcdir)/lib/scryptenc \
 			-I $(srcdir)/lib/crypto -I $(srcdir)/libcperciva/alg \
 			-I $(srcdir)/libcperciva/crypto	-I $(srcdir)/libcperciva/util
 scrypt_man_MANS=	scrypt.1
+
+EXTRA_DIST = BSDmakefile FORMAT lib/README libcperciva/COPYRIGHT	\
+ lib/crypto/crypto_scrypt-ref.c
