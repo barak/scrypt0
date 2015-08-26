@@ -1,6 +1,6 @@
 AC_INIT([scrypt],[1.2.0])
 AC_CONFIG_AUX_DIR([config.aux])
-AM_INIT_AUTOMAKE()
+AM_INIT_AUTOMAKE([foreign subdir-objects -Wall])
 AC_PROG_CC
 AC_PROG_RANLIB
 
