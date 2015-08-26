@@ -4,8 +4,6 @@ AM_INIT_AUTOMAKE([foreign subdir-objects -Wall])
 AC_PROG_CC
 AC_PROG_RANLIB
 
-# Don't rebuild the configure script.  I'm distributing a perfectly good one.
-AM_MAINTAINER_MODE
 
 # Check for clock_gettime.  On some systems, this is provided via librt.
 AC_CHECK_LIB(rt, clock_gettime)
