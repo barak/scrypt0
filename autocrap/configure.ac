@@ -1,10 +1,16 @@
+AC_PREREQ([2.69])
 AC_INIT([scrypt],[1.2.0])
+AC_CONFIG_SRCDIR([lib/scryptenc/scryptenc.c])
 AC_CONFIG_AUX_DIR([config.aux])
+AC_CONFIG_MACRO_DIR([m4])
 AM_INIT_AUTOMAKE([foreign subdir-objects -Wall])
+
+# Checks for programs.
 AC_PROG_CC
 AC_PROG_RANLIB
 AM_PROG_AR
 
+# Checks for libraries.
 
 # Check for clock_gettime.  On some systems, this is provided via librt.
 AC_SEARCH_LIBS([clock_gettime], [rt])
