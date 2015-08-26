@@ -3,6 +3,7 @@ AC_CONFIG_AUX_DIR([config.aux])
 AM_INIT_AUTOMAKE([foreign subdir-objects -Wall])
 AC_PROG_CC
 AC_PROG_RANLIB
+AM_PROG_AR
 
 
 # Check for clock_gettime.  On some systems, this is provided via librt.
